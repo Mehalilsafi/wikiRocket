@@ -7,8 +7,8 @@ import { useRouter } from 'next/navigation'
 
 export default function Search() {
   const [search,setSearch]=React.useState("");
-  const router=useRouter;
-console.log(search);
+  const router=useRouter();
+
   function handleChange(e){
     setSearch(e.target.value)
   }
